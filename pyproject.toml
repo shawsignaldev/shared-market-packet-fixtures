@@ -1,0 +1,16 @@
+[project]
+name = "shared-market-packet-fixtures"
+version = "0.1.0"
+description = "Public-safe market packet fixtures shared across FPGA, replay, tickerplant, and simulation research repos."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ephraim Shaw", email = "shawsignaldev@proton.me" }]
+keywords = ["market-data", "fixtures", "replay", "fpga", "testing"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
