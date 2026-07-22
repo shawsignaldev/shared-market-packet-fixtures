@@ -7,7 +7,7 @@ Public-safe market packet fixtures shared across FPGA, replay, tickerplant, and 
 - A canonical packet contract for sanitized market-data tests.
 - Deterministic CSV fixtures that can be replayed by software and hardware-facing models.
 - Sequence-gap, replay, and out-of-order detection.
-- Top-of-book projection from quote and trade packets.
+- top-of-book projection from quote and trade packets.
 - Fingerprints for stable fixture identity across repositories.
 
 ## Why It Matters
@@ -40,4 +40,3 @@ print(project_top_of_book(packets)["NVDA"])
 ## Boundary
 
 This is public research infrastructure. It does not contain private credentials, brokerage integration, account data, proprietary market data, trading-performance promises, or unverified hardware timing claims.
-
